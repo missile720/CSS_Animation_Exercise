@@ -1,0 +1,63 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    border: 5px solid;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    position: relative;
+    border: 5px solid;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+}
+
+.hour{
+    transform-origin: bottom left;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    border-left: 5px solid;
+    color: red;
+    width: 100px;
+    height: 100px;
+    animation: rotate 43200s infinite;
+}
+
+.minute{
+    transform-origin: bottom left;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    border-left: 5px solid;
+    color: blue;
+    width: 115px;
+    height: 115px;
+    animation: rotate 3600s infinite;
+}
+
+.second{
+    transform-origin: bottom left;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    border-left: 5px solid;
+    color: yellow;
+    width: 150px;
+    height: 150px;
+    animation: rotate 60s infinite;
+}
+
+@keyframes rotate {
+    /* here's where we define our animation */
+    from {transform: rotate(0);}
+    to {transform: rotate(360deg);}
+}
